@@ -66,5 +66,7 @@ canvas{
   font-size:7em;
   color:#fff;
   position: absolute;
-  top: 32%;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-70%);
 }
