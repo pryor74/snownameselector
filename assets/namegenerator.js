@@ -6,7 +6,7 @@ $(".submit").on("click", function(){
   let addName = $(".input").val();
   if (addName.length > 0 && $.inArray(addName, names) == -1) {
     names.push(addName);
-    NAMESLIST.append('<li data-name="addName">' + addName + DELETENAME + '</li>');
+    NAMESLIST.append('<li data-name="' + addName  + '">' + addName + DELETENAME + '</li>');
   }
   console.log(names);
 });
