@@ -28,13 +28,13 @@ canvas{
 .input{
   border:none;
   border-radius:0.5em;  
-  padding: .3em;
+  padding: .5em;
 }
 .btn{
   display: inline-block;
   padding: .3em;
   border-radius: .5em;
-  color: #c7c7ff;
+  color: #66aad2;
   background: #ffffff;
   margin-left: 0.3em;
 }
