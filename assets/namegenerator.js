@@ -18,6 +18,6 @@ $(".remove-name").on("click", function(){
   if (index > -1) {
     names.splice(index, 1);
   }
-  $(this).parent().remove();
+  $parent.remove();
   console.log(names);
 });
