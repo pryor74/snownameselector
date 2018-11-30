@@ -1,9 +1,12 @@
 body{
-  margin:0;
-  height:100%;
+  margin: 0;
+  height: 100vh;
   font-family: sketchnote-text, sans-serif;
   font-weight: 700;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 canvas{
   position:absolute;
@@ -62,4 +65,8 @@ canvas{
   float: right;
   margin-top: 0.2em;
   color:#66aad2;
+} 
+.winner{
+  font-size:3em;
+  color:#fff;
 }
