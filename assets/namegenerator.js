@@ -1,5 +1,5 @@
 const NAMESLIST = $("#names-list");
-const DELETENAME = "<i class=""fas fa-times-circle remove-name""></i>";
+const DELETENAME = '<i class="fas fa-times-circle remove-name"></i>';
 let names = [];
 
 $(".submit").on("click", function(){
