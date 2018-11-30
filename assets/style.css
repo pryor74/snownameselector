@@ -45,4 +45,9 @@ canvas{
 #names-list li{
     list-style: none;
     padding: 0.5em;
+    background: #fffffffa;
+    color: #545454;
+    border-radius: 0.2em;
+    border: 2px solid #787878;
+    text-align: center;
 }
