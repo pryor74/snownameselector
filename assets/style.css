@@ -1,7 +1,9 @@
 body{
   margin:0;
   height:100%;
-  font-family: 
+  font-family: cantoni-pro, serif;
+  font-weight: 700;
+  font-style: normal;
 }
 canvas{
   position:absolute;
