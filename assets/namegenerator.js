@@ -2,6 +2,11 @@ const NAMESLIST = $("#names-list");
 const DELETENAME = '<i class="fas fa-times-circle remove-name"></i>';
 let names = [];
 
+function randomIntFromInterval(min,max) // min and max included
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
 $(".submit").on("click", function(){
   let addName = $(".input").val();
   if (addName.length > 0 && $.inArray(addName, names) == -1) {
@@ -20,4 +25,8 @@ $(document).on("click", ".remove-name", function(){
   }
   $parent.remove();
   console.log(names);
+});
+
+$(".generate").on("click", function(){
+  console.log(randomIntFromInterval(0, names.length));
 });
