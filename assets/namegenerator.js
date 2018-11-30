@@ -11,7 +11,7 @@ $(".submit").on("click", function(){
   console.log(names);
 });
 
-$(".remove-name").on("click", function(){
+$(document).on(".remove-name","click", function(){
   let $parent = $(this).parent();
   let removeName = $parent.data("name");
   let index = names.indexOf(removeName);
