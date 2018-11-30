@@ -19,6 +19,18 @@ canvas{
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,173,212)),color-stop(0.84, rgb(23,82,145)));
   z-index: -1;
 }
+.input{
+  border:none;
+  border-radius:0.5em;  
+}
+.btn{
+  display: inline-block;
+  padding: .3em;
+  border-radius: .5em;
+  color: #c7c7ff;
+  background: #ffffff;
+  margin-left: 0.3em;
+}
 #names-list{
   list-style-position: outside;
   padding: 0;
