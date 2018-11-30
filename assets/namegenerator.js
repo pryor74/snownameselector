@@ -1,18 +1,11 @@
 const NAMESLIST = $("#names-list");
 const DELETENAME = '<i class="fas fa-times-circle remove-name"></i>';
+const WINNER = $(".winner");
 let names = [];
 
 function randomIntFromInterval(min,max) // min and max included
 {
     return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-function splitWord(str) {
-    let newString = "";
-    for (var i = 0; i <= str.length - 1; i++) { 
-        newString += "<span>" + str[i] + "</span>";
-    }
-    return newString;
 }
 
 $(".submit").on("click", function(){
@@ -38,6 +31,17 @@ $(document).on("click", ".remove-name", function(){
 $(".generate").on("click", function(){
     if (names.length > 0) {
         let winnerIndex = randomIntFromInterval(0, (names.length - 1));
-        $(".winner").html(splitWord(names[winnerIndex]));
+        let winner  = names[winnerIndex];
+        var winnerElements = winner.split("").map(function(c) {
+            return $('<span id="' + c + '">' + c + '</span>');
+        });
+        var delay = 50; // Tune this for different letter delays.
+        winnerElements.forEach(function(e, i) {
+            WINNER.append(e);
+            e.hide();
+            setTimeout(function() {
+                e.fadeIn(300)
+            }, 100 + i * delay)
+        })
     }  
 });
