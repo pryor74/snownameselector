@@ -28,5 +28,8 @@ $(document).on("click", ".remove-name", function(){
 });
 
 $(".generate").on("click", function(){
-  console.log(randomIntFromInterval(0, names.length));
+    if (names.length > 0) {
+        let winnerIndex = randomIntFromInterval(0, (names.length - 1));
+        $(".winner").html(names[winnerIndex]);
+    }  
 });
