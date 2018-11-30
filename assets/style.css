@@ -19,6 +19,12 @@ canvas{
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,173,212)),color-stop(0.84, rgb(23,82,145)));
   z-index: -1;
 }
+.generate-form{
+  right: 0;
+  top: 0;
+  padding:1em;
+  position:absolute;
+}
 .input-form{
   right: 0;
   bottom: 0;
