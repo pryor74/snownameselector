@@ -51,3 +51,8 @@ canvas{
     border: 2px solid #787878;
     text-align: center;
 }
+.remove-name{
+  float: right;
+  margin-top: 0.2em;
+  color:#66aad2;
+}
