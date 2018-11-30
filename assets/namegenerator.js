@@ -7,6 +7,14 @@ function randomIntFromInterval(min,max) // min and max included
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
+function splitWord(str) {
+    let newString = "";
+    for (var i = 0; i <= str.length - 1; i++) { 
+        newString += "<span>" + str[i] + "</span>";
+    }
+    return newString;
+}
+
 $(".submit").on("click", function(){
   let addName = $(".input").val();
   if (addName.length > 0 && $.inArray(addName, names) == -1) {
@@ -30,6 +38,6 @@ $(document).on("click", ".remove-name", function(){
 $(".generate").on("click", function(){
     if (names.length > 0) {
         let winnerIndex = randomIntFromInterval(0, (names.length - 1));
-        $(".winner").html(names[winnerIndex]);
+        $(".winner").html(splitWord(names[winnerIndex]));
     }  
 });
