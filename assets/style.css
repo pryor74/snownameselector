@@ -1,6 +1,7 @@
 body{
   margin:0;
   height:100%;
+  font-family: 
 }
 canvas{
   position:absolute;
@@ -15,4 +16,12 @@ canvas{
   background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);    
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,173,212)),color-stop(0.84, rgb(23,82,145)));
   z-index: -1;
+}
+#names-list{
+  list-style-position: outside;
+  padding: 0;
+}
+#names-list li{
+    list-style: none;
+    padding: 0.5em;
 }
